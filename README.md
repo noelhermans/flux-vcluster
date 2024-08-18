@@ -1,5 +1,5 @@
 # flux-vcluster
-Multicluster Flux with vclusters
+Single cluster Flux but managing multiple vclusters
 
 
 ## Steps 
