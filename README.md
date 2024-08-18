@@ -4,7 +4,7 @@ Multicluster Flux with vclusters
 
 ## Steps 
 
-###1. Build vm on hetzner
+### 1. Build vm on hetzner
 ```shell
 cd ~/hetzner-cloud-docker
 tofu init
@@ -12,7 +12,7 @@ tofu apply
 ssh@10.10.10.10
 ```
 
-###2. install pre-reqs
+### 2. install pre-reqs
 
 #### Install go
 ```shell
@@ -46,20 +46,20 @@ sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
 curl -sS https://webinstall.dev/k9s | bash
 ```
 
-###3. Deploy everything
+### 3. Deploy everything
 ```shell
 export GITHUB_TOKEN="<your github PAT"
 make install
 ```
 
-###4. Checks
+### 4. Checks
 ```shell
 kubectl get gitrepo -A
 kubectl get hr -A
 kubectl get kustomization -A
 ```
 
-###5. Connect to vlcusters
+### 5. Connect to vlcusters
 ```shell
 $ make vctx
 Switched to context "kind-host-cluster".
